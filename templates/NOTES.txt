@@ -1,0 +1,6 @@
+ghcr-test deployed as {{ include "ghcr-test.fullname" . }}.
+
+To access it:
+  kubectl --namespace {{ .Release.Namespace }} port-forward svc/{{ include "ghcr-test.fullname" . }} 8080:{{ .Values.service.port }}
+
+Then open http://localhost:8080

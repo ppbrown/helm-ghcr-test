@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/ppbrown/ghcr-test
+  pullPolicy: IfNotPresent
+  # No "latest" tag is published; set this (e.g. "main-123456789") or set via --set.
+  tag: ""
+
+# Rendered into the page body by the container's entrypoint.
+customContent: ""
+
+service:
+  type: ClusterIP
+  port: 8080

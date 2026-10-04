@@ -1,0 +1,9 @@
+apiVersion: v2
+name: ghcr-test
+description: Helm chart for the ghcr-test demo image
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+home: https://github.com/ppbrown/ghcr-test
+sources:
+  - https://github.com/ppbrown/ghcr-test
